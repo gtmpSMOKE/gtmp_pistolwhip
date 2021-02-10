@@ -1,7 +1,7 @@
 Citizen.CreateThread(function ()
     while true do
         Citizen.Wait(0)
-        local ped = GetPlayerPed( -1 )
+        local ped = PlayerPedId()
         local weapon = GetSelectedPedWeapon(ped)
         if IsPedArmed(ped, 6) then
             DisableControlAction(1, 140, true)
@@ -10,10 +10,3 @@ Citizen.CreateThread(function ()
          end
     end
 end)
-
-function ShowNotifcation(text)
-    SetNotificationTextEntry("STRING")
-    AddTextComponentString("text")
-    DrawNotification(false, false)
-
-end
