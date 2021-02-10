@@ -1,9 +1,9 @@
-fx_version 'adamant'
+fx_version 'cerulean'
 
 game 'gta5'
 
 description 'waffenschlag'
 
-client_scripts {
+client_script {
 	'client.lua'
 }
